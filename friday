@@ -13,7 +13,7 @@ init(){
 push(){
     git add .
     git commit -m "$foldername"
-    git push $remote master
+    git push $commitmsg master
 }
 
 
