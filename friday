@@ -1,18 +1,19 @@
 foldername=$2
 commitmsg=$3
+remote=$4
 
 init(){
     git init 
     git remote add $remote git@github.com:SHAHARYAR1255/$foldername.git
     git add .
     git commit -m "$commitmsg"
-    git push -u origin master
+    git push -u $remote master
 }
 
 push(){
     git add .
     git commit -m "$foldername"
-    git push origin master
+    git push $remote master
 }
 
 
