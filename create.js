@@ -1,20 +1,7 @@
-const { request } = require("@octokit/request");
 const octikit = require("@octokit/rest");
 require("dotenv").config();
 
-// const requestWithAuth= request.defaults({
-//     headers: {
-//       authorization: "token 39c267b53575c238f55d6cae0f19d054f8654636",
-//     },
-//   });
-
-
-//   const res = async () =>{
-//     const result = await requestWithAuth("GET /user");
-//     // console.log(result);      
-//   }
-//   res();
-
+//authorization
 const clientWithAuth = new octikit({
     auth : process.env.TOKEN
 });
@@ -22,6 +9,8 @@ const clientWithAuth = new octikit({
 
 let cmd = process.argv[2];
 let folderName = process.argv[3];
+
+
 //create repository
 
 if (cmd === "create") {
@@ -32,22 +21,9 @@ if (cmd === "create") {
         console.log(`git@github.com:SHAHARYAR1255/${folderName}.git`)
     })
 
-} 
- // //create new repo
-// clientWithAuth.repos.createForAuthenticatedUser({
-//     name : "creare"
-// });
+};
 
-//delete repo 
 
-// clientWithAuth.repos.delete({
-//     owner : "SHAHARYAR1255",
-//     repo: "oye bsdk"
-// }).then(data =>{
-//     console.log('deleted')
-// }).catch(err =>{
-//     console.log(err)
-// });
 
 //delete repo
 if (cmd === "delete") {
