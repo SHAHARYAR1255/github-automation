@@ -1,15 +1,15 @@
 foldername=$2
 commitmsg=$3
 
-pushrepo(){
+init(){
     git init 
-    git remote add origin git@github.com:Chensokheng/$foldername.git
+    git remote add origin git@github.com:SHAHARYAR1255/$foldername.git
     git add .
     git commit -m "$commitmsg"
     git push -u origin master
 }
 
-update(){
+push(){
     git add .
     git commit -m "$foldername"
     git push
@@ -19,11 +19,11 @@ update(){
 
 if [ $1 == "repo" ]
 then
-    node /home/sokheng-chen/Documents/autoGithub/index.js $2 $3
-elif [ $1 == "pushrepo" ]
+    node /d/JAVASCRIPT/automate/automatejs/create.js $2 $3
+elif [ $1 == "init" ]
 then
-    pushrepo
-elif [ $1 == "update" ]
+    init
+elif [ $1 == "push" ]
 then
-    update
+    push
 fi
