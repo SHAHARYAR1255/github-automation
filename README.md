@@ -19,9 +19,9 @@ bash friday.sh push <commit-msg> <remote-name>
 ```
 
 
-***WANT TO USE THESE IN ANY DIRECTORY?***
+***WANT TO USE THESE FROM ANY DIRECTORY?***
 
 Change **friday.sh** to **friday** and put it in the root then use above commands without bash.
 
-######USEFUL LINK
+#USEFUL LINK
 (https://www.youtube.com/watch?v=MYFpeDtXs28)
