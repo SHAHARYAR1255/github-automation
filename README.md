@@ -10,12 +10,12 @@ bash friday.sh repo create/delete <repository-name>
 
 ###TO INITIALIZE AND FIRST COMMIT
 ```
-bash friday.sh init "<commit-msg>" <remote-name>
+bash friday.sh init <commit-msg> <remote-name>
 ```
 
 ###TO PUSH CHANGED CODE
 ```
-bash friday.sh push "<commit-msg>" <remote-name>
+bash friday.sh push <commit-msg> <remote-name>
 ```
 
 
